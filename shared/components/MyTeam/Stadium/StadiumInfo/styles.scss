@@ -1,0 +1,41 @@
+.stadiuminfo{
+    -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, .03);
+    box-shadow: 0 2px 3px 2px rgba(0, 0, 0, .03);
+    border-radius: 2px;
+    .stImage{
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 2px 2px 0 0;
+    }
+    .info{
+        display: flex;
+        flex-wrap: wrap;
+        > div{
+            width: 50%;
+            padding: 8px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            font-size: 13px;
+            svg{
+                margin-right: 4px;
+            }
+            span{
+                float: right;
+                font-weight: bold;
+            }
+            background-color: #fff;
+            border-bottom: 1px solid rgba(0,0,0,.05);
+            &:nth-of-type(odd){
+                border-right: 1px solid rgba(0,0,0,.05);
+            }
+        }
+        @media (max-width: 767px) {
+            > div{
+                width: 100%;
+            }
+        }
+    }
+}

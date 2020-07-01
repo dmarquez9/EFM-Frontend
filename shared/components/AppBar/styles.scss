@@ -1,0 +1,67 @@
+.AppBar{
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  background-color: #000;
+  height: 70px;
+  position: relative;
+  z-index: 11;
+  .container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    > div{
+      padding: 0 12px;
+      &.auto{
+        flex: 1;
+      }
+      &.btnMobile > div{
+        border-radius: 100% !important;
+        min-width: 50px !important;
+        margin-top: 10px;
+        color: #fff !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        button{
+          height: 50px !important;
+          line-height: 50px !important;
+          border-radius: 100% !important;
+          background-color: transparent !important;
+          font-size: 18px !important;
+          > div > div{
+            height: 50px !important;
+            border-radius: 100% !important;
+            svg{
+              color: #fff !important;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 992px) {
+      > div.btnMobile{
+        display: none;
+      }
+    }
+    @media (max-width: 991px)
+    {
+      width: 95%;
+      > div{
+        padding: 0 6px;
+        &.auto{
+          display: none;
+        }
+        &.logoContainer{
+          flex: 1;
+        }
+      }
+    }
+    @media (max-width: 767px){
+      width: 100%;
+      > div {
+        padding: 0 4px;
+        &.user{
+          display: none;
+        }
+      }
+    }
+  }
+}

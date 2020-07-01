@@ -1,0 +1,278 @@
+.league{
+    padding: 30px;
+    h4{
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: 2.4rem;
+        color: #000;
+        margin: 0 0 6px;
+    }
+    table{
+        margin: 0;
+        thead > tr > th{ 
+            background-color: #000 !important;
+            color: #fff !important;
+            font-weight: bold !important;
+            &:first-child
+            {
+                display: none;
+            }
+        }
+    }
+    .active > td {
+        background-color: #3598dc !important;
+        color: #fff;
+    }
+}
+.colPos{
+    font-weight: bold;
+    border-left: 4px solid transparent;
+    padding-right: 0 !important;
+    width: 60px;
+}
+.colNum, .colPnt{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+@media (max-width: 767px){
+    .colNum, .colShield{
+        display: none;
+    }
+    .colPos, .colPnt{
+        width: 30px;
+        text-align: center !important;
+    }
+    .colPos{
+        padding-right: 12px !important;
+        padding-left: 12px !important;
+    }
+    .colTeam{
+        padding-right: 6px !important;
+        padding-left: 6px !important;
+    }
+}
+.colShield{
+    width: 48px;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: center;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.colTeam{
+    width: 40%;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+.btnTable   {
+    margin-top: 8px !important;
+}
+.leyenda{
+    margin: 8px 0;
+    display: block;
+    > div{
+        display: inline-block;
+        padding: 6px 12px;
+        border-left: 4px solid transparent;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        &.champions{
+            border-color: #09a751;
+        }
+        &.europa {
+          border-color: #ffc72b;
+        }
+        &.descenso {
+          border-color: #ee4036;
+        }
+        & + div {
+            margin-left: 6px;
+        }
+    }
+}
+.flex, .flexCenter{
+    display: flex;
+    .item{
+        flex: 1;
+    }
+    .sidebar{
+        width: calc(100%/3);
+        padding-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        .boxScorers, .boxAssisters, .boxJornada{
+            width: 100%;
+        }
+    }
+    .leagueImg{
+        padding: 0 30px;
+        img{
+            max-height: 80px;
+            margin: 0 auto;
+        }
+    }
+    .playerImg{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+@media (max-width: 991px) {
+    .flex{
+        flex-wrap: wrap;
+        .item, .sidebar{
+            flex: none;
+            width: 100%;
+        }
+        .sidebar{
+            padding-left: 0;
+            margin-top: 2.5rem;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .flexCenter{
+        flex-wrap: wrap;
+        .item, .leagueImg{
+            flex: none;
+            width: 100%;
+            text-align: center;
+        }
+        .leagueImg{
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .flex .sidebar .boxAssisters, .flex .sidebar .boxScorers{
+        width: 50%;
+    }
+    .flex .sidebar .boxScorers{
+        padding-right: 10px;
+    }
+    .flex .sidebar .boxAssisters{
+        padding-left: 10px;
+    }
+}
+.flexCenter{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 30px;
+}
+.boxTitle{
+    font-size: 2rem !important;
+    @media (max-width: 767px) {
+        font-size: 1.6rem !important;  
+    }
+}
+.box{
+    -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, .03);
+    box-shadow: 0 2px 3px 2px rgba(0, 0, 0, .03);
+    margin: 12px 0;
+    background-color: #fff;
+    padding: 15px 0 0;
+    color: #fff;
+    border-radius: 4px;
+    .flex{
+        padding: 6px 0;
+        color: #000;
+        background-color: #fff;
+        border-bottom: 1px solid rgba(0,0,0,.05);
+        .item{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: right;
+            padding-right: 12px;
+            span{
+                font-size: 2rem;
+            }
+            .playerName{
+                font-weight: 300;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+        }
+        .playerImg{
+            padding-left: 12px;
+            img{
+                max-height: 50px;
+                border-radius: 100%;
+            }
+        }
+        &:first-of-type{
+            background-color: transparent;
+            padding: 0 0 12px;
+            color: #fff;
+            border-bottom: none;
+            span{
+                font-size: 3rem;
+            }
+            .playerImg img{
+                max-height: 84px;
+            }
+        }
+        &:last-of-type{
+            border-radius: 0 0 3px 3px;
+        }
+    }
+}
+.jornada{
+    background-color: #fff;
+    display: block;
+    margin-top: 12px;
+    -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, .03);
+    box-shadow: 0 2px 3px 2px rgba(0, 0, 0, .03);
+    padding: 6px 12px 12px;
+    border-radius: 2px;
+    .dropdown
+    {
+        font-weight: bold;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        width: 100% !important;
+        font-size: 18px !important;
+        > div:first-of-type{
+            > div:nth-of-type(2){
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            > div:nth-of-type(3){
+                display: none;
+            }
+            button{
+                right: 0 !important;
+            }
+        }
+    }
+    .jShield{
+        background-repeat: no-repeat;
+        background-size: 95% auto;
+        background-position: center;
+        width: 32px;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .jTeam{
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+        font-weight: bold;
+        font-size: 10px !important;
+        text-transform: uppercase;
+        color: #000;
+    }
+    .jVs{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        width: 12px !important;
+        font-size: 8px !important;
+        text-align: center !important;
+    }
+}

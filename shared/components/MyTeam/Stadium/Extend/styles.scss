@@ -1,0 +1,47 @@
+.extend{
+    .buttons{
+        position: absolute;
+        padding: 15px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: right;
+    }
+    .errorMessage {
+        color: red;
+        display: flex;
+        justify-content: center;
+    }
+    .flex{
+        display: flex;
+        > div{
+            padding: 5px;
+            flex: 1;
+        }
+    }
+    .hr{
+        border-top: 3px solid #f93b78;
+        margin-bottom: 0;
+        margin-right: auto;
+        margin-left: auto;
+        width: 300px;
+        max-width: 100%;
+    }
+    .outlay{
+        margin-top: 30px;
+        text-align: center;
+        color: #000;
+        span{
+            display: block;
+            &.subtotal{
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+            &.total{
+                font-size: 26px;
+                font-weight: bold;
+            }
+        }
+    }
+}

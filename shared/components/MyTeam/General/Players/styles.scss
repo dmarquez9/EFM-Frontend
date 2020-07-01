@@ -1,0 +1,35 @@
+.players{
+    background-color: #fff;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, .03);
+    box-shadow: 0 2px 3px 2px rgba(0, 0, 0, .03);
+    flex: 1;
+    margin: 5px;
+    padding: 15px;
+    color: #000;
+    h4{
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: 2rem;
+        margin: 0;
+    }
+    table{
+        margin: 0;
+        thead > tr > th:first-child
+        {
+            display: none;
+        }
+    }
+    .colNum{
+        width: 24%;
+    }
+    .btnTable   {
+        float: right;
+        margin-top: 8px !important;
+    }
+    @media (max-width: 767px) {
+        width: calc(100% - 10px);
+        flex: none;
+    }
+}

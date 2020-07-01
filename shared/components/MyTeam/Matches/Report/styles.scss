@@ -1,0 +1,294 @@
+.report{
+    .scoreText{
+        background-color: #fff;
+        padding: 40px 12px 0;
+        display: block;
+    }
+    .approval{
+        background-color: #fff;
+        padding: 12px;
+        p{
+            font-style: oblique;
+            margin-top: 10px;
+        }
+        > div
+        {
+            border-radius: 4px;
+            height: 30px;
+            line-height: 30px;
+            font-weight: bold;
+            padding: 0 8px;
+            background-color: #eee;
+            color: #3a3a3a;
+            font-size: 12px;
+            svg{
+                float: left;
+                margin-right: 6px;
+                margin-top: 9px;
+            }
+        }
+    }
+	.activeTab {
+		color: #5a83ff !important;
+	}
+	.defaultTab {
+		color: #000 !important;
+	}
+    .stadium, .time{
+        background-color: #fff;
+        padding: 12px 20px;
+        display: block;
+        color: #444;
+        font-size: 14px;
+        strong{
+            font-weight: bold;
+            color: #000;
+        }
+    }
+    .time{
+        padding-top: 0;
+    }
+    .score{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #fff;
+        padding: 0 20px;
+        &:first-of-type{
+            padding-top: 30px;
+        }
+        .shield{
+            img{
+                max-height: 64px;
+                margin: 0 auto;
+            }
+        }
+        .nameTeam{
+            font-weight: bold;
+            font-size: 20px;
+            color: #000;
+            flex: 1;
+            padding: 0 15px;
+        }
+    }
+}
+.inputScore{
+    width: 64px !important;
+    font-weight: bold !important;
+    color: #000 !important;
+    font-size: 30px !important;
+    input{
+        text-align: right;
+    }
+}
+.TeamTab{
+    height: 50px;
+    font-weight: bold !important;
+    letter-spacing: .2em;
+    font-size: 12px !important;
+    transition: all .2s ease;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.05) !important;
+    > div > div{
+        height: 50px !important;
+        line-height: 50px;
+    }
+    &:active, &:focus, &:hover{
+        color: #5a83ff !important;   
+    }
+}
+.colCheckbox{
+    width: 48px;
+    padding-right: 0 !important;
+}
+.colNumber{
+    font-weight: bold;
+    width: 40px;
+    text-align: right !important;
+    font-size: 15px !important;
+}
+.colStats{
+    width: 100px;
+    .inputGoals{
+        color: #000;
+        font-weight: bold;
+        font-size: 16px !important;
+        width: 100px !important;
+    }
+    @media (max-width: 767px) {
+        width: 70px;
+        .inputGoals{
+            font-size: 12px !important;
+            width: 70px !important;
+        }
+    }
+}
+.colNumber, .colStats{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.confirmBtn {
+    display: inline-block
+}
+.btnReport{
+    button{
+        background-color: #5a83ff !important;
+        height: 50px !important;
+        line-height: 50px !important;
+        > div > div, > div{
+            height: 50px !important;
+        }
+        span{
+            color: #fff !important;
+        }
+    }
+}
+.resultFlex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #000;
+    margin-top: 12px;
+    > div{
+        &.resultScore{
+            font-weight: bold;
+            font-size: 30px;
+            padding: 0 12px;
+        }
+        &.teamHome, &.teamAway{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            img{
+                display: inline-block;
+                margin-right: 12px;
+                max-height: 80px;
+            }
+        }
+        &.teamAway{
+            justify-content: flex-end;
+            img{
+                margin-left: 12px;
+                margin-right: 0;
+                order: 1;
+            }
+        }
+        @media (max-width: 767px) {
+            &.teamAway, &.teamHome, &.resultScore{
+                width: 100%;
+                flex: none;
+                justify-content: center;
+                img{
+                    max-height: 40px;
+                    margin: 0 12px 0 0 !important;
+                    order: initial;
+                }
+            }
+            &.resultScore{
+                text-align: center;
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+        }
+    }
+}
+.resultStats{
+    margin-top: 20px;
+    .players{
+        display: flex;
+        flex-wrap: wrap;
+        > div{
+            flex: 1;
+            &:first-of-type{
+                padding-right: 8px;
+                border-right: 1px solid rgba(0,0,0,.1);
+            }
+            &:last-of-type{
+                padding-left: 8px;
+                text-align: right;
+                .stats{
+                    float: left !important;
+                }
+                .image{
+                    float: right !important;
+                    margin-right: 0;
+                    margin-left: 6px;
+                }
+            }
+            @media (max-width: 767px){
+                flex: none;
+                width: 100%;
+                &:first-of-type{
+                    border-right: none;
+                    padding-bottom: 12px;
+                    border-bottom: 1px solid rgba(0,0,0,.1);
+                }
+                &:last-of-type{
+                    text-align: left;
+                    padding: 12px 8px 0 0 !important;
+                    .stats{
+                        float: right !important;
+                    }
+                }
+                .image{
+                    display: none
+                }
+            }
+        }
+        .player{
+            color: #000;
+            font-size: 16px;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            .player + div{
+                margin-top: 10px;
+            }
+            div{
+                display: inline-block;
+                &.image{
+                    width: 40px;
+                    height: 40px;
+                    background-repeat: no-repeat;
+                    background-position: center bottom;
+                    background-size: 95% auto;
+                    border-radius: 100%;
+                    background-color: #fff;
+                    -webkit-box-shadow: 0 2px 3px 2px rgba(0,0,0,.03);
+                    box-shadow: 0 2px 3px 2px rgba(0,0,0,.03);
+                    margin-right: 6px;
+                    float: left;
+                }
+                &.stats{
+                    float: right;
+                    * + *{
+                        margin-left: 3px;
+                    }
+                }
+            }
+        }
+        .iconLabel{
+            display: inline-block;
+            position: relative;
+            padding-right: 12px;
+            .label{
+                display: inline-block;
+                border-radius: 100%;
+                background-color: #e40c27;
+                color: #fff;
+                height: 14px;
+                line-height: 14px;
+                width: 14px;
+                font-size: 9px;
+                text-align: center;
+                font-weight: bold;
+                position: absolute;
+                left: 11px;
+                top: 0px;
+                z-index: 10;
+            }
+        }
+    }
+}

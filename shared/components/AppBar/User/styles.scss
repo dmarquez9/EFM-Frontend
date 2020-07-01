@@ -1,0 +1,13 @@
+.User{
+    margin-top: 14px;
+    .btnUser{
+        border-radius: 3px !important;
+        button{
+            height: 42px !important;
+            line-height: 42px !important;
+            > div{
+                height: 42px !important;
+            }
+        }
+    }
+}

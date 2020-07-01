@@ -1,0 +1,34 @@
+.generalButton{
+    flex: 1;
+    border-radius: 4px;
+    padding: 25px 15px;
+    color: #fff;
+    position: relative;
+    text-align: right;
+    span{
+        display: block;
+        &.buttonValue{
+            font-size: 3rem;
+        }
+        &.buttonLabel{
+            font-weight: 100;
+            font-size: 20px;
+            margin-top: -12px;
+        }
+    }
+    .buttonIcon{
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        opacity: .2;
+        font-size: 5rem;
+        transform: rotate(-15deg);
+    }
+    @media (max-width: 991px) {
+        width: calc(50% - 10px);
+        flex: none;
+    }
+    @media (max-width: 767px) {
+        width: calc(100% - 10px);
+    }
+}

@@ -1,0 +1,188 @@
+.matchdetail{
+    .approval{
+        background-color: #fff;
+        padding: 12px;
+        > div
+        {
+            border-radius: 4px;
+            height: 30px;
+            line-height: 30px;
+            font-weight: bold;
+            padding: 0 8px;
+            background-color: #eee;
+            color: #3a3a3a;
+            font-size: 12px;
+            svg{
+                float: left;
+                margin-right: 6px;
+                margin-top: 9px;
+            }
+        }
+    }
+    .top{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px 20px 0;
+        background-color: #fff;
+        > div{
+            flex: 1;
+            white-space: nowrap;
+            padding: 15px 0;
+            &.team{
+                img{
+                    max-height: 96px;
+                    display: block;
+                    margin: 0 auto 12px;
+                }
+                span{
+                    color: #000;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+            }
+            &.detail{
+                padding-left: 15px;
+                padding-right: 15px;
+                span{
+                    display: block;
+                    color: #555;
+                    font-size: 13px;
+                    strong{
+                        color: #000;
+                        font-weight: bold;
+                    }
+                    &.score{
+                        font-size: 4rem;
+                        color: #000;
+                        font-weight: bold;
+                    }  
+                }
+            }
+        }
+    }
+}
+.TeamTab{
+    height: 50px;
+    font-weight: bold !important;
+    letter-spacing: .2em;
+    font-size: 12px !important;
+    transition: all .2s ease;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    > div > div{
+        height: 50px !important;
+        line-height: 50px;
+    }
+    &:active, &:focus, &:hover{
+        color: #5a83ff !important;   
+    }
+}
+.players{
+    display: flex;
+    > div{
+        flex: 1;
+        &:first-of-type{
+            padding-right: 8px;
+            border-right: 1px solid rgba(0,0,0,.1);
+        }
+        &:last-of-type{
+            padding-left: 8px;
+            text-align: right;
+            .stats{
+                float: left !important;
+            }
+            .image{
+                float: right;
+                margin-right: 0;
+                margin-left: 6px;
+            }
+        }
+    }
+}
+.buttons{
+    display: block;
+    padding: 0 20px 15px;
+    text-align: center;
+    background-color: #fff;
+    .btnTrue, .btnFalse{
+        margin-right: 12px;
+        box-shadow: none !important;
+        border-radius: 20px !important;
+        button{
+            border-radius: 20px !important;
+            div{
+                border-radius: 20px !important; 
+            }
+            span{
+                color: #fff !important;
+                text-transform: none !important;
+                letter-spacing: 1px !important;
+                font-size: 12px !important;
+            }
+        }
+    }
+    .btnTrue{
+        button{
+            background-color: #5a83ff !important;
+        }
+    }
+    .btnFalse{
+        button{
+            background-color: #e40c27 !important;
+        }
+    }
+}
+.player{
+    color: #000;
+    font-size: 16px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    div{
+        display: inline-block;
+        &.image{
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: 95% auto;
+            border-radius: 100%;
+            background-color: #fff;
+            -webkit-box-shadow: 0 2px 3px 2px rgba(0,0,0,.03);
+            box-shadow: 0 2px 3px 2px rgba(0,0,0,.03);
+            margin-right: 6px;
+            float: left;
+        }
+        &.stats{
+            float: right;
+            * + *{
+                margin-left: 3px;
+            }
+        }
+    }
+}
+.iconLabel{
+    display: inline-block;
+    position: relative;
+    padding-right: 12px;
+    .label{
+        display: inline-block;
+        border-radius: 100%;
+        background-color: #e40c27;
+        color: #fff;
+        height: 14px;
+        line-height: 14px;
+        width: 14px;
+        font-size: 9px;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        left: 11px;
+        top: 0px;
+        z-index: 10;
+    }
+}

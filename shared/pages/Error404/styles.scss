@@ -1,0 +1,32 @@
+.page404{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+    z-index: 20;
+    background-color: #3598dc;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    h2{
+        font-family: 'Poppins', sans-serif;
+    }
+    p{
+        letter-spacing: 1px;
+        font-weight: 100;
+        font-size: 18px;
+    }
+    .btn404 span{
+        font-weight: bold !important;
+        text-transform: none !important;
+    }
+    img{
+        display: block;
+        margin: 0 auto 2rem;
+    }
+}

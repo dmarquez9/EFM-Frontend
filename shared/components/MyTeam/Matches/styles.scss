@@ -1,0 +1,126 @@
+.matches{
+    background-color: #fff;
+    display: flex;
+    .item{
+        flex: 1;
+    }
+    h4{
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: 1.7rem;
+        color: #000;
+        padding: 20px 15px;
+        margin: 0;
+        border-bottom: 1px solid rgba(0,0,0,.05);
+    }
+    table{
+        margin: 0;
+    }
+}
+.colDate{
+    color: #bbb;
+    width: 100px;
+    font-weight: bold;
+    .time{
+        color: #000;
+        display: block;
+        font-size: 15px !important;
+    }
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+.colShield{
+    width: 48px;
+    padding-right: 12px !important;
+    padding-left: 0 !important;
+    background-size: 42px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (max-width: 767px) {
+        width: 32px;
+        background-size: 20px auto;
+    }
+}
+.teamHome, .teamAway{
+    font-weight: bold;
+    color: #000;
+    font-size: 16px !important;
+    @media (max-width: 767px) {
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+    }
+}
+.teamAway{
+    text-align: right !important;
+}
+.colScore{
+    width: 50px;
+    text-align: center !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    div{
+        margin: 0 auto;
+        display: inline-block;
+        padding: 4px 6px;
+        font-weight: bold !important;
+        background-color: #eee;
+        border-radius: 2px;
+        color: #000;
+        min-width: 40px;
+        &.win{
+            background-color: rgb(76, 175, 80);
+            color: #fff !important;
+        }
+        &.lose{
+            background-color: #e40c27;
+            color: #fff !important;
+        }
+    }
+}
+.match{
+    width: 40%;
+    border-left: 1px solid rgba(0,0,0,.2);
+    position: relative;
+    background-color: #e9e9e9;
+    form{
+        margin: 0;
+    }
+    .btnModal{
+        padding: 0;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+        color: #bbb;
+        opacity: .8;
+        transition: all .2s ease;
+        position: absolute;
+        left: 5px;
+        top: 0px;
+        &:hover, &:focus{
+            opacity: 1;
+        }
+    }
+    @media (max-width: 991px){
+        width: 100%;
+        position: fixed;
+        height: 100%;
+        left: 0;
+        z-index: 999;
+        top: 0;
+        border-left: none;
+        overflow-y: auto;
+    }
+}
+.defaultRow{
+    background-color: #fff;
+}
+.activeRow{
+    border-left: 6px solid rgb(53, 152, 220);
+    td{
+        background-color: #fff !important;
+        box-shadow: 14px 2px 20px -1px rgba(0,0,0,.1);
+        position: relative;
+    }
+}
