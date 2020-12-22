@@ -144,7 +144,7 @@
     "lint-staged": "4.2.2",
     "md5": "2.2.1",
     "modernizr-loader": "1.0.1",
-    "node-notifier": "5.1.2",
+    "node-notifier": "8.0.1",
     "node-sass": "^4.5.2",
     "postcss": "^6.0.1",
     "postcss-cssnext": "^2.10.0",
