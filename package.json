@@ -66,7 +66,7 @@
     "@fortawesome/free-solid-svg-icons": "5.1.0-11",
     "@fortawesome/react-fontawesome": "0.1.0-11",
     "app-root-dir": "1.0.2",
-    "axios": "0.16.1",
+    "axios": "0.21.1",
     "classnames": "2.2.5",
     "colors": "1.1.2",
     "compression": "1.7.0",
