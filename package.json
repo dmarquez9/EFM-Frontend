@@ -73,7 +73,7 @@
     "cookie-machine": "0.1.1",
     "cross-env": "5.0.5",
     "dotenv": "4.0.0",
-    "dotty": "0.1.0",
+    "dotty": "0.1.2",
     "express": "4.15.4",
     "helmet": "3.8.1",
     "hpp": "0.2.2",
