@@ -74,7 +74,7 @@
     "cross-env": "5.0.5",
     "dotenv": "4.0.0",
     "dotty": "0.1.0",
-    "express": "4.15.4",
+    "express": "4.17.3",
     "helmet": "3.8.1",
     "hpp": "0.2.2",
     "lodash": "4.17.10",
